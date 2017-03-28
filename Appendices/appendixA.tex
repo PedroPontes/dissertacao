@@ -1,0 +1,45 @@
+\chapter{MATLAB function: calibration.mat}
+\label{ap:a}
+\lstset{
+    frame=tb, % draw a frame at the top and bottom of the code block
+    tabsize=4, % tab space width
+    showstringspaces=false, % don't mark spaces in strings
+    numbers=left, % display line numbers on the left
+    commentstyle=\color{green}, % comment color
+    keywordstyle=\color{blue}, % keyword color
+    stringstyle=\color{red} % string color
+}
+\begin{lstlisting}[language=matlab]
+function vid=calibration(vid)
+
+L=size(vid); %extrai tamanho da matriz do video
+x=600; %inicializacao do valor
+Tamb=24; %temperatura ambiente
+e=0.95; %emissividade estimada
+
+for k=1:L(3)
+    for j=1:L(2)
+        for i=1:L(1)
+            ADU = vid(i,j,k);
+            %seguranca para excluir pixeis mortos
+            if ADU < 1000
+                vid(i,j,k) = 450;
+            else
+                %encontra Wtot para ADU de cada pixel
+                r=roots([-1.4901E-6 8.4705E-3 -3.268533 1574.11-ADU]);
+                l=1;
+                %filtra solucoes
+                while l<4
+                    fi=r(l);
+                    if fi >=300 && fi<=1500
+                        x = fi;
+                    end
+                    l=l+1;
+                end
+            end
+            vid(i,j,k)=(nthroot((x/5.67E-8-0.05*(Tamb+273)^4)/e,4)-273);
+        end
+    end
+    k
+end
+\end{lstlisting}

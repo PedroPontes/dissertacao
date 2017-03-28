@@ -1,0 +1,117 @@
+\select@language {portuguese}
+\select@language {english}
+\select@language {english}
+\select@language {portuguese}
+\select@language {english}
+\select@language {english}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Introduction}{1}{chapter.1}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Calibration of an IR Camera with polynomial fit\relax }}{3}{figure.caption.10}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Theoretical Background}{7}{chapter.2}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Atmospheric Windows\relax }}{8}{figure.caption.11}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Total radiation sources scheme\relax }}{10}{figure.caption.12}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Tension Balance\relax }}{10}{figure.caption.13}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Wetting Regimes\relax }}{11}{figure.caption.14}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Contact Angle approaches: (a) Wenzel, (b) Cassie-Baxter\relax }}{11}{figure.caption.15}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Droplet impact stages, for an hydrophilic surface\relax }}{13}{figure.caption.16}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Droplet impact stages, for an hydrophobic surface\relax }}{13}{figure.caption.17}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Heat Flux at the surface for different timesteps\relax }}{13}{figure.caption.18}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Evolution of the calculated cooling effectiveness during the impact of a droplet on a surface initially at 120\IeC {\textordmasculine }C\relax }}{15}{figure.caption.19}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Scheme of the surface temperature variation along the droplet radius, during spreading\relax }}{16}{figure.caption.20}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Experimental Setups}{17}{chapter.3}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Xenics' Onca-MWIR-InSb\relax }}{17}{figure.caption.21}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Xeneth: Connection Setup Menu\relax }}{18}{figure.caption.23}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Xeneth: Main Window Scheme\relax }}{19}{figure.caption.24}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Xeneth: Selection Panel\relax }}{20}{figure.caption.25}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Offset Calibration: Before and After\relax }}{20}{figure.caption.26}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Silicon Wafer setup: (1) Thermocouple, (2) Silicon Wafer\relax }}{21}{figure.caption.27}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Horizontal setup: (1) Needle, (2) IR Camera, (3) HS Camera, (4) Heated Surface, (5) Lamp, (6) Black Background\relax }}{22}{figure.caption.28}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Bottom Setup Scheme\relax }}{23}{figure.caption.30}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Stainless Steel Support: (1) Before calibration setup, (2) After calibration setup\relax }}{23}{figure.caption.31}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Bottom Setup: (1) Power Source, (2) HS Camera, (3) IR Camera, (4) Needle, (5) Foil Support, (6) Harvard Apparatus\relax }}{24}{figure.caption.32}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Calibration and Data Processing Methods}{25}{chapter.4}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Pratical Cavity Blackbody Source scheme\relax }}{26}{figure.caption.33}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Cavity and light trapping effect scheme\relax }}{27}{figure.caption.34}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Final design scheme for the Blackbody Calibration Source\relax }}{28}{figure.caption.35}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces SolidWorks render of a cut device view\relax }}{29}{figure.caption.36}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Thermal Resistance used\relax }}{29}{figure.caption.37}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Thermocouple placement scheme\relax }}{30}{figure.caption.38}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces PENA30FR Adhesive Insulation\relax }}{30}{figure.caption.39}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Completed Blackbody\relax }}{31}{figure.caption.40}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Completed Blackbody Calibration Source: (1) Blackbody cavity; (2) Data Aquisition Board; (3) PID controller; (4) IR Camera; (5) Thermocouples (one connected to the PID, the others to the Data Aquisition Board)\relax }}{31}{figure.caption.41}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Calibration Instalation in Function\relax }}{32}{figure.caption.42}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Blackbody thermal image and its respective histogram\relax }}{32}{figure.caption.43}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Calibration example: initial temperature field, and uniform temperature field (after $\approx $5 min)\relax }}{33}{figure.caption.44}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Xeneth's software - Temperature Calibration (Plank)\relax }}{33}{figure.caption.45}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Complete Temperature Calibration (Plank)\relax }}{34}{figure.caption.46}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Comparison of the two calibrations at it=450us\relax }}{36}{figure.caption.48}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Comparison of the two calibrations at it=450us\relax }}{37}{figure.caption.49}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces The effect of the filter in both the image and a line of point temperature values\relax }}{38}{figure.caption.50}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Median filter effect\relax }}{39}{figure.caption.51}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Background filter effect\relax }}{39}{figure.caption.52}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Experimental Results}{41}{chapter.5}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Side view of the water droplets impacting the hydrophilic foil at 2 m/s: spreading and receding phases\relax }}{41}{figure.caption.53}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Side view Results for 60\IeC {\textordmasculine }C during the spreading and receding phases\relax }}{42}{figure.caption.54}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Example of the results representation\relax }}{42}{figure.caption.55}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Repeatability of the experiments\relax }}{43}{figure.caption.56}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Comparison between results with and without the proposed calibration\relax }}{44}{figure.caption.57}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Before custom calibration}}}{44}{figure.caption.57}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {After custom calibration}}}{44}{figure.caption.57}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Comparison between High Speed camera images and Infra Red images for 0.8m/s and 80\IeC {\textordmasculine }C at 0, 2, 6, 12 and 22 ms after the first contact on a hydrophilic surface\relax }}{45}{figure.caption.58}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Heat Flux along the radius of a water droplet, $u_i=2m/s$, Surface temperature=100\IeC {\textordmasculine }C\relax }}{46}{figure.caption.59}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Cooling effectiveness along $t^*$ for a water droplet impacting on an hydrophilic surface\relax }}{47}{figure.caption.60}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Detail view}}}{47}{figure.caption.60}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Full view}}}{47}{figure.caption.60}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Comparison of droplet impact at 0.8m/s and 2m/s. The water droplet impacts the surface at an initial temperature of 100\IeC {\textordmasculine }C\relax }}{47}{figure.caption.61}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Comparison between the spreading factor of each velocity\relax }}{48}{figure.caption.62}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Average temperature along the radius between the 5 experiments of both velocity values at 100\IeC {\textordmasculine }C\relax }}{48}{figure.caption.63}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Comparison of the heat flux computed for different impact velocities. The water droplets impact the surface which is at an initial temperature of 120\IeC {\textordmasculine }C\relax }}{49}{figure.caption.64}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {t=2ms}}}{49}{figure.caption.64}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {t=4ms}}}{49}{figure.caption.64}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Computed cooling effectiveness comparison between two different impact velocity values for the initial foil temperature of 120\IeC {\textordmasculine }C\relax }}{50}{figure.caption.65}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Detail}}}{50}{figure.caption.65}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Full view}}}{50}{figure.caption.65}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Average adimensional temperature along the radius for 4 different initial temperatures at 0.8 m/s\relax }}{51}{figure.caption.66}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {3 ms}}}{51}{figure.caption.66}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {13 ms}}}{51}{figure.caption.66}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {23 ms}}}{51}{figure.caption.66}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Cooling effectiveness for various initial foil temperatures with an impact speed of 0.8 m/s\relax }}{52}{figure.caption.67}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Cooling effectiveness for various initial foil temperatures with an impact speed of 2 m/s\relax }}{52}{figure.caption.68}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Spreading Factor along time for a water and ethanol droplet with an impact velocity of 0.8 m/s at $\Delta T=20\IeC {\textordmasculine }C$ from saturation \relax }}{53}{figure.caption.69}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces High speed images for a water and ethanol droplet impact at the velocity of 0.8 m/s\relax }}{53}{figure.caption.70}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Average temperature along the radius for Ethanol and Water for a droplet impacting at 0.8m/s on a foil initially with $\Delta T=20\IeC {\textordmasculine }C$ under saturation\relax }}{54}{figure.caption.71}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {2 ms}}}{54}{figure.caption.71}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {6 ms}}}{54}{figure.caption.71}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {12 ms}}}{54}{figure.caption.71}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {24 ms}}}{54}{figure.caption.71}
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Heat Flux along the radius for Ethanol and Water for a droplet impacting at 0.8m/s on a foil initially with $\Delta T=20\IeC {\textordmasculine }C$ under saturation\relax }}{55}{figure.caption.72}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {2 ms}}}{55}{figure.caption.72}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {4 ms}}}{55}{figure.caption.72}
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Cooling Effectiveness comparison between water and ethanol for a droplet impacting at 0.8m/s on a foil initially with $\Delta T=20\IeC {\textordmasculine }C$ under saturation\relax }}{56}{figure.caption.73}
+\contentsline {figure}{\numberline {5.22}{\ignorespaces HS Images for Hydrophilic and Super-Hydrophobic surfaces droplet impact at 0.8 m/s impact speed\relax }}{56}{figure.caption.74}
+\contentsline {figure}{\numberline {5.23}{\ignorespaces Spreading Factor along the radius for an Hydrophilic and Super-Hydrophobic\relax }}{57}{figure.caption.75}
+\contentsline {figure}{\numberline {5.24}{\ignorespaces Temperature along the radius for Ethanol and Water\relax }}{57}{figure.caption.76}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {2 ms}}}{57}{figure.caption.76}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {6 ms}}}{57}{figure.caption.76}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {12 ms}}}{57}{figure.caption.76}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {24 ms}}}{57}{figure.caption.76}
+\contentsline {figure}{\numberline {5.25}{\ignorespaces IR Images for a Super-Hydrophobic surface droplet impact at 0.8 m/s impact speed (foil initial temperature at 100\IeC {\textordmasculine }C)\relax }}{59}{figure.caption.77}
+\contentsline {figure}{\numberline {5.26}{\ignorespaces IR Images for a Super-Hydrophobic surface droplet impact at 0.8 m/s impact speed (foil initial temperature at 100\IeC {\textordmasculine }C)\relax }}{59}{figure.caption.77}
+\contentsline {figure}{\numberline {5.27}{\ignorespaces Heat Flux comparison along the radius for a droplet impact in surfaces with different wettability\relax }}{60}{figure.caption.78}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {2 ms}}}{60}{figure.caption.78}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {4 ms}}}{60}{figure.caption.78}
+\contentsline {figure}{\numberline {5.28}{\ignorespaces Cooling Effectiveness comparison along the radius for a droplet impact in surfaces with different wettability\relax }}{60}{figure.caption.79}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Conclusions and Future Work}{61}{chapter.6}
+\addvspace {10\p@ }
+\contentsline {xchapter}{MATLAB function: calibration.mat}{A-1}{appendix.A}
+\addvspace {10\p@ }
+\contentsline {xchapter}{MATLAB function: pbkgremove.mat}{B-1}{appendix.B}
+\addvspace {10\p@ }
+\contentsline {xchapter}{MATLAB function: fluxo.mat}{C-1}{appendix.C}
+\addvspace {10\p@ }
+\contentsline {xchapter}{MATLAB function: fluxo.mat}{D-1}{appendix.D}

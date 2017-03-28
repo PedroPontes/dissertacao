@@ -1,0 +1,29 @@
+\select@language {portuguese}
+\select@language {english}
+\select@language {english}
+\select@language {portuguese}
+\select@language {english}
+\select@language {english}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Introduction}{1}{chapter.1}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Theoretical Background}{7}{chapter.2}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Experimental Setups}{17}{chapter.3}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Camera Properties\relax }}{18}{table.caption.22}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Thermophysical Properties of the Studied Liquids\relax }}{22}{table.caption.29}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Calibration and Data Processing Methods}{25}{chapter.4}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Calibration Results\relax }}{36}{table.caption.47}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Experimental Results}{41}{chapter.5}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Conclusions and Future Work}{61}{chapter.6}
+\addvspace {10\p@ }
+\contentsline {xchapter}{MATLAB function: calibration.mat}{A-1}{appendix.A}
+\addvspace {10\p@ }
+\contentsline {xchapter}{MATLAB function: pbkgremove.mat}{B-1}{appendix.B}
+\addvspace {10\p@ }
+\contentsline {xchapter}{MATLAB function: fluxo.mat}{C-1}{appendix.C}
+\addvspace {10\p@ }
+\contentsline {xchapter}{MATLAB function: fluxo.mat}{D-1}{appendix.D}

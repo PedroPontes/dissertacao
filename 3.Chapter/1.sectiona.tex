@@ -1,0 +1,85 @@
+\section{Introduction}
+
+\par This Chapter describes the experimental setups used in the present work, together with the respective procedures. Two setups are used to obtain side views of the droplet (to understand its dynamics) and bottom view of the surface, to obtain temperature maps of the surface region cooled by the impact of the droplet.\\
+
+\section{The Infrared (IR) Camera}
+\label{sec:icam}
+The IR Camera, an Onca-MWIR-InSb from Xenics, is the main device used in this dissertation provides "images" of the analyzed object's temperature field. Its 2D array of sensors reads the incident IR radiation. Its signal is then converted to temperature in the camera's software. The user will end up with a bi-dimensional field of temperatures with a +/- 0.5ºC precision. This camera can be seen in Figure \ref{fig:onca}.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\linewidth]{Figures/2.Chapter/onca.png}
+\caption{Xenics' Onca-MWIR-InSb}
+\source{http://www.xenics.com/en/onca-mwir-insb}
+\label{fig:onca}
+\end{figure}
+
+\subsection{Camera properties}
+
+\par The relevant properties of the Onca-MWIR-InSb can be seen in Table \ref{tab:camprop}.
+
+\begin{table}[h]
+\centering
+\caption{Camera Properties}
+\label{tab:camprop}
+\begin{tabular}{lclclc}
+\toprule
+\multicolumn{2}{c}{Camera Characteristics} & \multicolumn{2}{c}{Optical System} & \multicolumn{2}{c}{Image Characteristics} \\
+\cmidrule[0.4pt](r{0.125em}){1-2}%
+\cmidrule[0.4pt](r{0.125em}){3-4}%
+\cmidrule[0.4pt](r{0.125em}){5-6}%
+Sensor                 & InSb (MWIR)       & Focal lens          & 13 mm        & Video Rate         & 60Hz                 \\
+Spectral Sensibility   & 3.5-5 $\mu m$     & Optics Material     & Germanium    & Max framerate      & 3000 fps             \\
+Spatial Resolution     & $320 \times 256$ px &  -                  & -            & Min pixels (ROI)   & $15 \times 5$ px        \\
+Thermal Sensibility    & \textless17mk     &   -                 &   -          & Exposition         & \textgreater 1 $\mu s$  \\ \bottomrule
+\end{tabular}
+\end{table}
+
+
+\subsection{The Software}
+
+\par This camera has its own specific software, Xeneth, which will be very important throughout this work. It's relevant to explain its functioning, which will be referenced various times in this dissertation. The correct use of the camera also depends on an appropriate configuration of several parameters on the software which therefor are worth to be explored with more detail.
+
+\subsubsection{Selecting a Calibration Pack}
+
+\par When the program is executed a menu will appear. In this menu it's possible to select not only the used camera (there is also an option to select a virtual camera, used to play previously recorded videos) but also to select a calibration pack as it is shown in Figure \ref{fig:consetup}.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\linewidth]{Figures/3.Chapter/xeneth1.png}
+\caption{Xeneth: Connection Setup Menu}
+\label{fig:consetup}
+\end{figure}
+\par In the Calibration data drop menu are available several calibration packs. The main packs are:
+\begin{itemize}
+\item TRUE NUC: This pack is the one chosen if one wants to get data without temperature conversion. It presents results in Analogue to Digital Units (ADU) (received signal intensity) and it's adaptable to any integration time
+\item TRUE THERMAL: This pack comes with a calibration made by the camera manufacturer, so the results are presented in Celsius. This is used if the user just needs a low thermal resolution measure or a qualitative result. It allows temperature measurements from -20 to 120ºC in any integration time (the integration time will be described in the following subsection).
+\item User Calibration Packs: The user may want to create his own custom made pack adapted to his own temperature interval, to use in a more specific application.
+\end{itemize}
+
+\subsubsection{Main Window}
+\label{software}
+\par After choosing the appropriate calibration for the desired application and before starting the measurements, one should adjust several parameters in the main software window. The displayed panels are shown in Figure \ref{fig:xeneth2}. There is a panel for the Camera Image, where one can see the thermal image and select an area or dot to take its read value and other statistics; a User Interaction Panel, where one can change settings, view and set the selection properties, record and save videos and choose image filters; a panel that shows the plotted measured data. In the right side we can also see a colour bar. This bar is adjustable so that we can adapt the colour gradient to the desired temperature interval to better observe the phenomena. \\
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\linewidth]{Figures/3.Chapter/xeneth2.png}
+\caption{Xeneth: Main Window Scheme}
+\label{fig:xeneth2}
+\end{figure}
+\par Before starting there are some important settings to review to assure the best image possible. These parameters can be altered in the User Interaction Panel. The first and one of most important parameters is the integration time. The integration time can be easily explained as the equivalent to a common camera's exposure. If we increase the integration time we increase the sensitivity and reduce the noise. On the other side the image will saturate easier, which means that the temperature range highly decreases. So if a higher temperature range is needed, one should decrease the integration time until the desired range is obtained. Increasing the integration time will also decrease the acquisition rate (fps) which may not be relevant for static measurements, but the phenomena studied in this dissertation requires high temporal resolution because their characteristic time is of the order of milliseconds. The next important parameter to get is the Ambient Temperature and the Atmospheric Temperature, which can also be altered this in the User Interaction Panel. To determine the Ambient Temperature a highly reflective object is put in front of the camera and its temperature measured considering the body to be black. \\
+\par The measurements can be made using the Selection Panel, shown in Figure \ref{fig:xeneth3}. In this panel it is possible to select a shape (a circle in the case presented) and gather the statistics about the temperature data, including the average temperature of the selected area both in space and time and also the standard deviation. This procedure is also used to select the area of interest. Finally the Zoom function is very important to restrict the measured area as much as it is possible to increase the acquisition rate of the camera. \\
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\linewidth]{Figures/3.Chapter/xeneth3.png}
+\caption{Xeneth: Selection Panel}
+\label{fig:xeneth3}
+\end{figure}
+\subsubsection{Offset Calibration}
+\par The offset calibration is required to decrease the Narcissus effect, which is basically the reflection of the lens on itself, being an error source which must be eliminated. An example of this effect is illustrated in Figure \ref{fig:xeneth5} where a blackbody with constant temperature may happen to have temperature variations (Figure \ref{fig:xeneth5}.a).
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\linewidth]{Figures/3.Chapter/xeneth5.png}
+\caption{Offset Calibration: Before and After}
+\label{fig:xeneth5}
+\end{figure}
+\par A good way to eliminate this error is to use a software tool: the Offset Calibration. This can be found in the Calibration Wizard (a menu of calibration options for the camera) and has a simple function: it averages the temperature in space and time and sets every pixel to that temperature. This eliminates the camera's reflection and also part of the noise and bad pixels. A disadvantage of this method is that it may create lesser periodic noise, which can be a problem to the measurements. The code behind this function is unknown, so the noise source could not be detected and could only be attenuated later in the post-processing stage. The result of the Offset Calibration can be seen in Figure \ref{fig:xeneth5}.b. \\

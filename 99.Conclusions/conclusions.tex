@@ -1,0 +1,40 @@
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The Introduction:
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Conclusions and Future Work}
+\label{cap:conclusions}
+
+\par This work aimed at exploring the potential to use time resolve infrared (IR) thermography to detail the heat transfer phenomena occurring at liquid-solid interfaces. The main focus was put on liquid droplets impacting on solid heated surfaces.\\ In this work, IR, namely thin (20microns) stainless steel foils. \par The precision required to obtain accurate measurements within this technique applied to such demanding experimental conditions required developing a custom made calibration method and specific post processing procedures, the latter allowing to collect and process data to obtain reliable qualitative and quantitative results describing the most relevant heat transfer phenomena.\\
+\par Despite this was the first approach to such a complex problem, the calibration method proved to be functional, allowing to obtain high (temporal) resolution results with noise reduction, when compared to the calibration method available in the software of the camera. This method was proved to be repeatable and the results were quite reproducible, capturing details on the temperature variation, heat flux and cooling effectiveness, in agreement with the physical processes that are described in the literature. Such details included for instance capturing the higher surface temperature observed at the center of the droplet (in the impact region) which can be related with the air entrapment mechanisms that are often referred in the literature, or the temperature variations along the droplet wetted area, which depends on the thickness of the lamella (e.g. one can identify the so called neck of the lamella). \\
+\par Furthermore, IR thermal images were taken simultaneously to those obtained with a high speed camera to better understand the relation between the heat transfer processes and droplet dynamics. This approach requires some improvements as the images taken by each camera are not perfectly synchronized and similarity between frames is not always enough to achieve a precise matching between the images in early timesteps after droplet impact. In fact in the images taken within these early timesteps, the calculated heat flux depicts some irregularities caused by the lack of spatial and temporal resolution (and absent of this synchronism). This can also be caused by the thermal inertia of the stainless steel foil that is used as an impact surface. , that doesn't capture correctly the first heat transfer events's details. The ideal situation is to put the IR camera and HS camera working simultaneously. An alternative to the stainless steel foil that can be used in future experiments is a sapphire glass, transparent to infrared, and painted with a high emissivity paint.\\
+\par After validating the calibration and post processing methods, infrared thermography was used to infer on the effect of the droplet impact velocity, on the the liquid properties (particulalry the surface tension) and on the effect of the wettability of the surface (applying a commercial chemical coating to the foil which turn it to superhydrophobic) on droplet dynamics and on the heat transfer processes, mainly evaluating the surface temperature variation along the droplet radius, the heat flux and the cooling effectiveness.   results were also satisfactory and complied with the expected. The results show that higher impact velocity velocities lead to larger heat fluxes and cooling effectiveness. It is also shown that  the temperature drop in the surface region beneath the droplet is lower for smaller impact velocities. for lower impact velocities, the temperature would drop lower. This is however only observed for later timesteps after droplet impact (later stages of spreading) and does not affect the overall cooling effectiveness.\\
+\par Regarding the effect of the initial surface temperature the experimental results show  that the relative temperature (initial non-dimensional temperature) plots are very close irrespective to the initial temperature considered. A similar trend is observed for the cooling effectiveness. This confirms the usefulness of the weighted background removal code, as this code is based on the fact that the temperature difference is relative and not absolute as a normal background removal would addressed it. Testing liquids with different different surface tension values, namely water and ethanol showed that contarily to what was expected the liquid with smaller surface tension which is also the liquid depicting lower thermal properties actually has a better cooling effectiveness, which is associated to the larger wetting area of this droplets during spreading. One of the main difficulties of using a low surface tension liquid turned out to be the positioning of the droplet. With the electric current the foil would slightly bend,and that was enough to influence the physics of the droplet impact. A solution to address this problem is to glue the stainless steel foil to the support glass.\\
+\par Finally the wettability is shown to play a major role in droplet dynamics and heat transfer. Droplet impacts on hydrophilic surfaces were shown to remove larger heat fluxes than those impacting on superhydrophobic surfaces. The spreading diameter was close in both cases for the same velocity, but the wetted area is smaller for the superhydrophobic, as well as the time the droplet is in contact with the surface.\\
+\par Part of this work was submitted to the Journal of Bionic Engineering:
+ 
+\noindent Teodori, E., Moita, A. S., Pontes, P., Moura, M., Moreira, A. L. N., Y. Bai, X. Li, Y. Liu (2016) Application of bioinspired superhydrophobic surfaces in two-phase heat transfer experiments.
+
+\section{Future Work}
+
+\par In the future this one intends to extend this technique, with the devised post processing methods to address other interfacial phenomena such as bubble nucleation and growth in pool boiling. When investigating pool boiling, a new calibration must be performed. 
+In future work, a method should also be considered to obtain perfectly synchrnized IR and high-speed images.\\
+\par Improvements can also be made to the calibration. The blackbody device used to perform the calibration requires an additional cooling mechanism. This will allow working with the device up to higher temperatures and reducing the time require for the temperatures to stabilize. 
+\par The post processing code can also be improved as it's currently very fragmented and the output of the results is a simple text document with all the values. A full report with both values and plots would be of great utility for future studies. To address the fragmentation of the code, this must be optimized for an efficient and automated analysis. The calibration code is also very slow when processing data, as it must solve an equation of third order. While MATLAB takes several minutes to process a video, the camera software does it immediately. With a linearization this code may be faster.\\
+\par Finally, a more efficient way to fix the stainless steel foil needs to be designed. This will prevent the deformation caused by the electric current. There is a considerable temporal temperature gradient in the foil probably due to thermal inertia. This needs to be addressed as well in future works. A possible solution to minimize this problem is better insulating the foil from its base. 
+
+\cleardoublepage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

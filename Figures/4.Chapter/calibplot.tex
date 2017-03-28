@@ -1,0 +1,57 @@
+\begin{tikzpicture}
+\begin{axis}[
+	title = {Iteration Time = 450us},
+    tick label style={font=\scriptsize},
+    legend style={font=\scriptsize,/tikz/column 2/.style={column sep=5pt},},
+    legend columns=2,
+    legend cell align=left,
+	legend pos =south east,
+    grid=major, % Display a grid
+    grid style={dashed,gray!30}, % Set the style
+    xlabel={ADU},
+    ylabel={$W_{tot} (W/m^2)$}, 
+    ymin = 400, ymax = 1200,
+    %ytick={300,325,350,375,400,425,450,475,500,525},
+    %yticklabels={300,325,350,375,400,425,450,475,500,525},
+    xmin = 3000, xmax = 15000,
+    xtick={0,1000,...,15000},
+    xticklabel style={
+        /pgf/number format/fixed,
+        /pgf/number format/precision=5},
+	scaled x ticks=false,
+    width=\textwidth, height=9cm,
+    %legend entries={Experimental,Computational, $264 W/m^{2}$,$807 W/m^{2}$,$2031 W/m^{2}$,$3636 W/m^{2}$}
+    ]
+
+% \addlegendimage{only marks, mark=square*,black}
+% \addlegendimage{only marks, mark=x      ,black}
+% \addlegendimage{only marks, mark=*      ,blue}
+% \addlegendimage{only marks, mark=*      ,red}
+% \addlegendimage{only marks, mark=*      ,brown}
+% \addlegendimage{only marks, mark=*      ,black}
+
+
+%-------------------------------------------------------------
+%Experimental ------------------------------------------------
+%-------------------------------------------------------------
+
+\addplot+[only marks,mark=square*,blue] % 264 experimental
+coordinates {(	3141	,	450.1532612	)
+(	4246	,	551.1904079	)
+(	4879	,	609.5460842	)
+(	7142	,	771.1624794	)
+(	9928	,	948.1166888	)
+};
+\addplot+[only marks,mark=square*,red]
+coordinates{(	3200	,	449.9120215	)
+(	3794	,	506.9481463	)
+(	4666	,	574.5844207	)
+(	6287	,	716.4103256	)
+(	8270	,	838.8604805	)
+(	9827	,	924.4022127	)
+(	12094	,	1034.669156	)
+(	14078	,	1141.371929	)};
+\legend{Calibration 1, Calibration 2}
+
+\end{axis}
+\end{tikzpicture}

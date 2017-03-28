@@ -1,0 +1,40 @@
+\chapter{MATLAB function: fluxo.mat}
+\label{ap:d}
+\lstset{
+    frame=tb, % draw a frame at the top and bottom of the code block
+    tabsize=4, % tab space width
+    showstringspaces=false, % don't mark spaces in strings
+    numbers=left, % display line numbers on the left
+    commentstyle=\color{green}, % comment color
+    keywordstyle=\color{blue}, % keyword color
+    stringstyle=\color{red} % string color
+}
+\begin{lstlisting}[language=matlab]
+% Initialization (variables from fluxo.mat)
+L=size(q);
+tsize=L(1);
+Q=zeros(1,tsize);
+Qtot=Q;
+
+for t=1:tsize
+    for i=1:L(2)-2
+        Q(t)=((q(t,i+1)+q(t,i))*(i-1/2)/2- ...
+        (q(t,i+2)+q(t,i+1))/2+(q(t,i+1)+q(t,i))/2)*dx^2*2*pi()+Q(t);
+    end
+end
+
+raio=(0.11:0.11:0.11*40);
+tempo=(10^-3:10^-3:60*10^-3);
+
+for tt=2:tsize-1
+    for t=1:tt
+        Qtot(tt)=(Q(t+1)+Q(t))*dt/2+Qtot(tt);
+    end
+end
+
+e=Qtot/(1000*4/3*pi()*0.0015^3*4182*(100-24));
+
+t1=tempo*2/0.0027;
+
+plot(t1,e,'b');
+\end{lstlisting}

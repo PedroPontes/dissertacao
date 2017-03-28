@@ -1,0 +1,46 @@
+\chapter{MATLAB function: pbkgremove.mat}
+\label{ap:b}
+\lstset{
+    frame=tb, % draw a frame at the top and bottom of the code block
+    tabsize=4, % tab space width
+    showstringspaces=false, % don't mark spaces in strings
+    numbers=left, % display line numbers on the left
+    commentstyle=\color{green}, % comment color
+    keywordstyle=\color{blue}, % keyword color
+    stringstyle=\color{red} % string color
+}
+\begin{lstlisting}[language=matlab]
+function vid = bkgremove(vid)
+
+% Initializes variables
+L = size(vid);
+frames = L(3);
+bkg = vid(:,:,1);
+sum = 0;
+aux = 0;
+
+%%% Identifies the plate hole
+[centers, radii] = imfindcircles(im2bw(imread('frame-1.tif'),0.3),[45 47] ...
+    ,'ObjectPolarity','bright','Sensitivity',0.992);
+
+%%% Calculates the average
+for i=1:L(1)
+    for j=1:L(2)
+        if sqrt((i-centers(1))^2+(j-centers(2))^2)>(radii-30)
+        else
+            sum=vid(i,j,1)+sum; aux=aux+1;
+        end
+    end
+end
+
+av=sum/aux
+
+%%% Subtract background fraction
+for t=1:frames
+    for x=1:L(1)
+        for y=1:L(2)
+            vid(x,y,t) = av-(bkg(x,y)-vid(x,y,t))/bkg(x,y)*av;
+        end
+    end
+end
+\end{lstlisting}

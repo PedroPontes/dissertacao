@@ -1,0 +1,12 @@
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.1}Blackbody Calibration Sources}{\reset@font\mtcSfont 25}{section.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.1}Design details}{\reset@font\mtcSSfont 27}{subsection.4.1.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.2}Building Process}{\reset@font\mtcSSfont 28}{subsection.4.1.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.2}Calibration process}{\reset@font\mtcSfont 29}{section.4.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.1}Software Calibration}{\reset@font\mtcSSfont 33}{subsection.4.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.2}Proposed Calibration}{\reset@font\mtcSSfont 35}{subsection.4.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.3}Calibration Process Details}{\reset@font\mtcSSfont 35}{subsection.4.2.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.3}Data Processing Methods}{\reset@font\mtcSfont 38}{section.4.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3.1}Patterned Noise}{\reset@font\mtcSSfont 38}{subsection.4.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3.2}Median Filter}{\reset@font\mtcSSfont 39}{subsection.4.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3.3}Background Filter}{\reset@font\mtcSSfont 39}{subsection.4.3.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3.4}Heat Flux computation}{\reset@font\mtcSSfont 40}{subsection.4.3.4}}

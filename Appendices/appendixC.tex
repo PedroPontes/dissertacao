@@ -1,0 +1,59 @@
+\chapter{MATLAB function: fluxo.mat}
+\label{ap:c}
+\lstset{
+    frame=tb, % draw a frame at the top and bottom of the code block
+    tabsize=4, % tab space width
+    showstringspaces=false, % don't mark spaces in strings
+    numbers=left, % display line numbers on the left
+    commentstyle=\color{green}, % comment color
+    keywordstyle=\color{blue}, % keyword color
+    stringstyle=\color{red} % string color
+}
+\begin{lstlisting}[language=matlab]
+load results.mat
+mat=results
+%% Variables
+cp=477; %J.kg-1.K.1
+k=18; %W.m-1.K-1
+th=20*10^-6; %m
+rho=7880; %kg.m-3
+qi=2548; %W.m-2
+dx=110*10^-6; %m
+dt=10^-3; %s
+slimit=60; %space size
+tlimit=60; % time size
+
+
+%% Initialization
+q=zeros(tlimit,slimit);
+space=zeros(tlimit,slimit);
+time=zeros(tlimit,slimit);
+
+%% Coeficients
+a1=0; a2=-1; a3=1; a4=0; a5=0;
+
+%% Calculation
+for i=3:slimit
+    for t=1:tlimit
+        if t==1
+            A1=0; A2=0; A3=mat(t,i)*a3; A4=mat(t+1,i)*a4; A5=mat(t+2,i)*a5;
+        elseif t==2
+            A1=0; A2=mat(t-1,i)*a2; A3=mat(t,i)*a3 ;A4=mat(t+1,i)*a4; 
+            A5=mat(t+2,i)*a5;
+        else
+            A1=mat(t-2,i)*a1; A2=mat(t-1,i)*a2; A3=mat(t,i)*a3; 
+            A4=mat(t+1,i)*a4; A5=mat(t+2,i)*a5;
+        end
+        
+        if i==1 || t==1
+            q(t,i)=0;
+        elseif i==2
+            q(t,i)=0;
+        else
+            space(t,i)=k*th*(mat(t,i)-2*mat(t,i-1)+mat(t,i-2))/dx^2;
+            time(t,i)=-rho*cp*th*(A1+A2+A3+A4)/dt;
+            q(t,i)=qi+time(t,i)+space(t,i);
+        end
+    end
+end
+\end{lstlisting}

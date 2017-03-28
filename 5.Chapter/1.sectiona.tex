@@ -1,0 +1,286 @@
+\section{Indroduction}
+
+\par This chapter explores the use of the IR camera (after taking the calibration procedures) to describe the heat transfer occurring at droplet wall interactions. The analysis focus on discussing the potential and limitations of this technique. Additionally the heat transfer processes are investigated, addressing the effect of liquid properties, surface wettability and surface temperature 
+
+\section{Side View}
+
+\par This experiment served as an introductory case study to get familiar with the camera characteristics. As stated before, the geometric implications of the droplet shape in radiation prevent the extraction of quantitative results, as well as the transmissivity of the liquid to infrared, although it's close to 0 for water.\\
+\par This experiment addressed two different impact velocities: 2 m/s and 0.8 m/s, and three initial foil temperatures: 60ºC, 100ºC and 110ºC. The results obtained in this configuration are shown in Figure \ref{fig:hexp} and Figure \ref{fig:hexp2}, mainly illustrative results. In this figure, the x axis represents the distance between the bottom of the droplet to its top. These results show that for the same impact velocity, the temperature gradient in the droplet, from the surface to the top, evolves similarly along time irrespective of the surface temperature. The temperature at the liquid-solid interface is naturally higher than that on the bulk of the droplet. At early stages the temperature at the interface is also lower than at later stages of spreading, when the thickness of the lamella becomes thinner. As for the impact velocity comparison, the results show a bigger temperature increase at the lamella's base for the higher impact velocity profile.
+
+\begin{figure}[h]
+\includegraphics[width=1\linewidth]{Figures/5.Chapter/hexp.png}
+\caption{Side view of the water droplets impacting the hydrophilic foil at 2 m/s: spreading and receding phases}
+\label{fig:hexp}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.66\linewidth]{Figures/5.Chapter/hexp2.png}
+\caption{Side view Results for 60ºC during the spreading and receding phases}
+\label{fig:hexp2}
+\end{figure}
+
+\section{Bottom View}
+
+\par The images obtained in this configuration are mainly bidimensional temperature maps of the area on the surface corresponding to the area that is wetted by the droplet. From this map one can obtain the distribution of the temperature along the droplet radius for small time steps. Further post processing of the collected data was used to compute the heat flux and cooling effectiveness (as explained in Chapter 2), to compare the results obtained in the various experimental conditions. The connection between the high-speed images, temperature map and temperature plot is depicted Figure \ref{fig:hexp}.\\
+
+\begin{figure}[h]
+\includegraphics[width=1\linewidth]{Figures/5.Chapter/example.png}
+\caption{Example of the results representation}
+\label{fig:hexp}
+\end{figure}
+
+\par In fact various conditions were tested, namely two different impact velocities, 0.8 m/s and 2 m/s, and four initial foil temperature values, for conditions before and after the saturation point, 60ºC, 80ºC, 100ºC and 110ºC. Additionally, two different wettability conditions were compared, namely using the hydrophilic foil and the super-hydrophobic, coated foil. Finally, tests were also performed with two liquids: water and ethanol. As for each of the conditions, 5 different experiments were made, so that the repeatability of the tests could be confirmed. In Figure \ref{fig:repeat} the repeatability of these tests can be seen with the example of the 60ºC results for 2 m/s.\\
+
+\begin{figure}[h]
+\centering
+\input{Figures/5.Chapter/repeat}
+\caption{Repeatability of the experiments}
+\label{fig:repeat}
+\end{figure}
+
+\subsection{Result of applying the custom made calibration method}
+
+\par Some preliminary images were taken using the camera calibration, which were then compared to those using the custom made calibration detailed in Chapter 4. To evaluate the quality of the calibration it is important to compare the results and interpret the differences.  The result of applying the calibration process is discussed for the impact of water droplets at 2 m/s and 0.8 m/s, for initial foil temperatures of 60ºC, 100ºC and 110ºC. Due to deviations in the ADU to Celsius conversion, these exact temperature values could not always be achieved, so the real working temperature is provided. Figure \ref{fig:calibcomp2} compares the temperature variation on the foil as a function of the spreading droplet radius for the impact velocity of 0.8 m/s the different curves in each plot correspond to different time instants of the spreading. So, in the time instants chosen to depict impact (e.g. t=1ms) the temperature decrease of the center region of the droplet is small and swiftly recovers for the still small spreading ratio. This contrasts in the higher temperature drops at later time instants.\\
+
+\par Before comparing the images, one should bare in mind the differences in their conditions. The results before calibration were taken at a different ambient temperature, proximity to the droplet and framerate. The average framerate of the results before the calibration is 990 fps, and 1100 after. These improvements were the result of having more experience dealing with the camera during this work. This results in better temporal and spatial resolution in the data obtained after the calibration. Hence one can only compare similar frames and differences may be accentuated by that. \\
+
+\par One important aspect is that the apparent diameter (the diamenter that one can perceive from the temperature plots, that is representative of the wetted area) is approximately the same with and without this improved calibration process. During the spreading phase (all the points before 13 ms) the new calibration and method captures a bit of the air trapping effect mentioned previously in Section \ref{sec:heat}. The mentioned effect is not captured in the results without the calibration. Another thing that was corrected, was the fact that the temperature at the center of the droplet (r=0) would drop bellow the ambient temperature in the Figure \ref{fig:calibcomp2}. This is impossible because the droplet is at ambient temperature. The cause of this is related to optical effects, that were nullified by the calibration. On the other hand the results obtained using the custom made calibration have some noise that couldn't be addressed without losing resolution. The cause of the noise is probably the improved setup that allowed higher spatial resolution. So while there are advantages using the factory calibration, the proposed calibration can better portrait the physical phenomena. \\
+
+\begin{figure}
+\centering
+\subfigure[Before custom calibration]{\input{Figures/5.Chapter/calibcomp}}
+\subfigure[After custom calibration]{\input{Figures/5.Chapter/calibcomp2}}
+\caption{Comparison between results with and without the proposed calibration}
+\label{fig:calibcomp2}
+\end{figure}
+
+\subsection{Simultaneous analysis of droplet dynamics and thermal processes}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth]{Figures/5.Chapter/IRvsHR.png}
+\caption{Comparison between High Speed camera images and Infra Red images for 0.8m/s and 80ºC at 0, 2, 6, 12 and 22 ms after the first contact on a hydrophilic surface}
+\label{fig:irvshr}
+\end{figure}
+
+\par One of the main objectives of this work is to use the high-speed camera simultaneously with the IR Camera to compare physical phenomena with thermal phenomena. The results were put together in Figure \ref{fig:irvshr}. In this figure it is possible to see some of the stages of a droplet impact. Analyzing the images, it's observable the physical phenomena that have an impact on heat transfer. During the spreading, the lamella's rim is visible in the temperature maps, as introduced in Section \ref{sec:heat}, starts forming in the second millisecond. When the edge reaches maximum diameter it reverses direction and starts the recoiling phase, shown in the 12 ms images. The thickness of the water layer is smaller right before the lamella's edge. In this area there is less heat removal. So, as expected, one can see a ring of higher temperatures, and a slope in the plot. After the recoiling phase the droplet starts to stabilize, and due to it's hemispherical shape the heat flux is higher at the center, so the temperature is lower in the center. Although here there is no rim in the lamella by this phase, one can clearly see the lighter ring on the IR Image. This is the cause of thermal inertia.
+
+\par Another type of results can be obtained for the collected data and these are the heat flux and cooling effectiveness. Starting with the heat flux, an example of the obtained graphic can be seen in Figure \ref{fig:fluex}. Looking at the heat flux, one can see the expected phenomena, described in the literature \cite{pasandideh2001cooling}. There are only some comparable results between Figure \ref{fig:fluxo} and the collected results, as the timestep of the simulation is much smaller. The contact edge heat flux peak couldn't be captured in the initial timesteps, but is clear in the posterior frames. This contact edge peak is a reflection of cold water being pushed to the edge of the lamella as the droplet spreads. In the center the spatial gradient is ignored because of the problem's axisymmetry. The highest peaks for the initial times aren't captured by the IR Camera, but the flux drop before the peak, in Figure \ref{fig:fluxo}, is visible in the 1ms and 2ms frame. The spatial dispersion of the flux in early frames is clear in the experimental results. This may be caused by thermal inertia and heat diffusion along the foil. This may also be the cause for the innexistence of a peak in the early frames. In the last frame, which, according to Figure \ref{fig:diameter}, is already during the receding phase, the heat flux is negative after the droplet edge. This is caused by the area being no longer wetted and is now heating again. Also the heat flux drop before the contact angle peak is an indicative of the presence of the lamella's rim in that area. Also the heat flux is very small compared to other timesteps due to the droplet temperature raise.\\
+
+
+\begin{figure}[h!]
+\centering
+\input{Figures/5.Chapter/fluxex}
+\caption{Heat Flux along the radius of a water droplet, $u_i=2m/s$, Surface temperature=100ºC}
+\label{fig:fluex}
+\end{figure}
+
+\par Observing the cooling efficiency graphic in Figure \ref{fig:coolex}, a comparison with \cite{pasandideh2001cooling} can be made. Using this graphic as a reference a very similar evolution with time can be seen. The adimensional parameter $t^*$ is used to consider the impact velocity in a comparison. The evolution stagnates as the droplet's temperature increases and the foil temperature decreases. The cooling effectiveness is higher in the numerical results. This may be the cause of a different initial flux or foil size. It can also be the cause of the ideal conditions assumed in the numerical simulation.\\
+
+\begin{figure}[h!]
+\centering
+\subfigure[Detail view]{\input{Figures/5.Chapter/coolex}}
+\subfigure[Full view]{\input{Figures/5.Chapter/coolex1}}
+\caption{Cooling effectiveness along $t^*$ for a water droplet impacting on an hydrophilic surface}
+\label{fig:coolex}
+\end{figure}
+
+\subsection{Influence of the impact velocity}
+
+\par For an hydrophilic surface (the stainless steel foil), results were taken for different impact velocities: 0.8 m/s, 2 m/s at an initial heating of 100ºC. At this temperature, boiling of the lamella is not yet observed. The two impact velocities are compared in Figure \ref{fig:hsspeed} The obvious difference is observed between the droplet spreading at different impact velocities is the spreading diameter, which is directly influenced by the impact velocity. One of the differences is the fingering, that only happens for 2 m/s (at t= 6ms). The height of the lamella is also smaller for this velocity.\\
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\linewidth]{Figures/5.Chapter/hsspeed.png}
+\caption{Comparison of droplet impact at 0.8m/s and 2m/s. The water droplet impacts the surface at an initial temperature of 100ºC}
+\label{fig:hsspeed}
+\end{figure}
+
+\par Using the high speed camera it was possible to extract the droplet diameter for each frame, with the help of a code developed previously by Tomás Valente. The comparison between the spreading factor of each velocity can be seen in Figure \ref{fig:diameter}. As expected the spreading factor grows more with a higher impact velocity. In this figure the difference between the maximum diameter time can be compared. In the case of 2 m/s the time in which the maximum diameter occurs is at approximately 4 ms, and in the case of 0.8 m/s occurs at 6 ms. The spreading factor difference in maximum diameter has a relation of approximately 2,5 to 4, which is considerably larger.\\
+
+\begin{figure}[h]
+\centering
+\input{Figures/5.Chapter/diameter}
+\caption{Comparison between the spreading factor of each velocity}
+\label{fig:diameter}
+\end{figure}
+\begin{figure}[h!]
+\centering
+\input{Figures/5.Chapter/speed1}
+\input{Figures/5.Chapter/speed2}
+\input{Figures/5.Chapter/speed3}
+\caption{Average temperature along the radius between the 5 experiments of both velocity values at 100ºC}
+\label{fig:speed1}
+\end{figure}
+
+\par Lets now take a look at the influence of the velocity in the temperature field. In Figure \ref{fig:speed1}, the average of all experiments made for both velocity values at 100ºC is presented for comparison. The temperature at the center of the droplet is similar during the spreading (3ms and 13 ms). The temperature at the droplet center drops more intensely in the lower velocity. This is justified by the height difference, also noticeable in the last panel of Figure \ref{fig:irvshr}. Looking at the shape of the curves, one can observe their similarity.\\
+
+\par The temperature fields can only give us qualitative information. To quantify cooling and compare both velocities, the heat flux and cooling effectiveness should be considered. Starting with the heat flux, the measurements made for an droplet impacting on a hydrophilic surface at initial temperature of 120ºC were taken as an example. The comparison between different impact velocities is shown in Figure \ref{fig:speedflux}. For both time frames, the contact edge can be easily identified, and the same phenomena are present: the contact edge peak, the peak and drop of the flux caused by the lamella's rim and the heat flux drop in the center due to the trapped gas bubble effect. Overall the flux is higher in the 2 m/s due to the wetted area being larger. The fact that the lamella is thinner in the 2 m/s impact velocity tests, is compensated by the increase in convection heat transfer. As seen before, when reaching equilibrium, the lamella is hotter for the 2 m/s measurements. This is the cause of having a thinner lamella with greater heat flux promoted by convection, which heats the droplet to higher temperatures than in the 0.8 m/s impact velocity case study. This can be also related to the fact that even though the lamella thickness is higher in lower velocities, the heat flux is comparable or even lower, as seen in the figure.\\
+
+\begin{figure}[h!]
+\centering
+\subfigure[t=2ms]{\input{Figures/5.Chapter/speedflux}}
+\subfigure[t=4ms]{\input{Figures/5.Chapter/speedflux2}}
+\caption{Comparison of the heat flux computed for different impact velocities. The water droplets impact the surface which is at an initial temperature of 120ºC}
+\label{fig:speedflux}
+\end{figure}
+
+\par To study the influence of the impact velocity, the results for each velocity were plotted together, using non-dimensional time. The generated plots for the temperature at 120ºC can be seen in Figure \ref{fig:speedcool}. In a first analysis it is possible to see similar changes in the curves for different impact velocities (Figure \ref{fig:cooling}). These plots show the difference in cooling effectiveness. It is clear that the higher impact velocity impacts show more heat removal capacity that the lower velocity ones. This is not always the case though. In the first instants after impact the lower impact velocity impacts show more efficiency in removing heat. But when it comes down to the latter time steps the effectiveness more than doubles with the impact velocity.\\
+
+\begin{figure}[h]
+\subfigure[Detail]{\input{Figures/5.Chapter/speedcool}}
+\subfigure[Full view]{\input{Figures/5.Chapter/speedcool2}}
+\caption{Computed cooling effectiveness comparison between two different impact velocity values for the initial foil temperature of 120ºC}
+\label{fig:speedcool}
+\end{figure}
+
+\par With these results it is possible to reaffirm what some previous authors studied. The impact velocity affects positively the cooling efficiency as the wetted area is bigger and convection heat transfer increases.\\
+
+\subsection{Influence of the initial foil temperature}
+
+\par This section will address the relative temperature drop in the foil for the tested temperatures. The temperatures had to be adimensionalised  so that they could be compared. This analysis, for a fixed impact velocity of 0.8 m/s, can be seen in Figure \ref{fig:temp}. In this figure one can see that for different initial temperatures, the relative temperature drop is very similar in the center region, but has a significant difference in the edge area. This may be due to the different spreading diameters at that time (larger input velocities lead to larger spreading diameters), which can shift the curve.\\
+
+\begin{figure}[h]
+\centering
+\subfigure[3 ms]{\input{Figures/5.Chapter/temp2}}
+\subfigure[13 ms]{\input{Figures/5.Chapter/temp1}}
+\subfigure[23 ms]{\input{Figures/5.Chapter/temp3}}
+\caption{Average adimensional temperature along the radius for 4 different initial temperatures at 0.8 m/s}
+\label{fig:temp}
+\end{figure}
+
+\par This is a confirmation for the effectiveness of the  weighted background test. Because there is little variation between the adimensionalised temperature maps, one may argue that the relative variation of the temperature is similar. This legitimizes the use of the weighted background removal as a mean to obtain a uniform initial temperature.\\
+
+\par To infer if the initial foil temperature has a relevant effect on the cooling effectiveness, one needs to plot several this parameter for several temperatures at the same impact velocity. These results are depicted Figure \ref{fig:tempcool} and \ref{fig:tempcool2}. In Figure \ref{fig:tempcool} it's clear that all curves are close to be coincident so, the initial temperature doesn't influence the cooling effectiveness. But one needs to be careful making this statement because, for 2 m/s, in Figure \ref{fig:tempcool2}, it's noticeable that the 110ºC curve is not close to the others, but instead is converging to a higher cooling effectiveness. This is due to phase change of the liquid which occurs during spreading, as the lamella's thickness is thinner at $u_i=2 m/s$, so boiling may occur within this thin lamela.\\
+
+\begin{figure}[h!]
+\centering
+\input{Figures/5.Chapter/tempcool}
+\caption{Cooling effectiveness for various initial foil temperatures with an impact speed of 0.8 m/s}
+\label{fig:tempcool}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\input{Figures/5.Chapter/tempcool2}
+\caption{Cooling effectiveness for various initial foil temperatures with an impact speed of 2 m/s}
+\label{fig:tempcool2}
+\end{figure}
+
+\par Neither in the qualitative nor quantitative studies does foil temperature effect the performance of the liquid in cooling it. When liquid phase change occurs this may improve the cooling effectiveness, although it isn't clear if the obtained results reflect that, as the difference between this and the other curves is still small and one cannot see the boiling of the lamella which may be incipient.
+
+
+\subsection{Effect of liquid surface tension}
+
+\par The effect of the liquid surface tension is addressed here comparing the thermal processes occurring at the impact of water and ethanol droplets for initial surface temperatures below saturation.\\
+\par Given the lower surface tension of ethanol, the spreading factor is much larger than that of water, so the lamella is also much thinner. This reduced thickness of the lamella of the ethanol droplet became an obstacle when performing the experiments since for initial foil temperatures above saturation ($T_{sat} \approx 80ºC$), the applied electrical current is very high deforming the stainless steel foil. These deformations are not relevant for the spreading of the water droplets but is enough to promote the lamella to slip away from the measurement area, being impossible to capture IR images under those conditions. Hence, the only measurements that could be performed for ethanol were obtained for the lowest impact velocity (0.8 m/s) and for initial foil temperatures of 40ºC and 60ºC.\\
+
+\begin{figure}[h!]
+\centering
+\input{Figures/5.Chapter/ethdiameter}
+\caption{Spreading Factor along time for a water and ethanol droplet with an impact velocity of 0.8 m/s at $\Delta T=20ºC$ from saturation }
+\label{fig:ethdiameter}
+\end{figure}
+\par The spreading factor obtained for water and ethanol droplets is depicted in Figure\ref{fig:ethdiameter}. The maximum spreading factor is reached at 8ms after impact for ethanol and 4 ms after impact for water. Furthermore, ethanol droplet does not recoil but continues the spreading up to very later times after impact in a regime that is governed by capillarity. Naturally the wetted area of the spreading ethanol droplet is larger than that of water. Qualitative high-speed images of both water and ethanol droplets, shown in Figure \ref{fig:ethhs} clearly show the differences quantitatively observed in Figure \ref{fig:ethdiameter}.\\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=1\linewidth]{Figures/5.Chapter/hsetanol.png}
+\caption{High speed images for a water and ethanol droplet impact at the velocity of 0.8 m/s}
+\label{fig:ethhs}
+\end{figure}
+
+\par To compare the two liquids under similar conditions of initial foil temperature, the first approach was to consider the same temperature difference from the saturation temperature of each liquid. So initial foil temperatures were addressed to compare the two liquids for $\Delta T=20ºC$ and $\Delta T=40ºC$. However, the obtained results showed that this was not a good approach since the temperature influence is relative to the initial foil temperature (i.e. the relative percentage of temperature decay from the saturation temperature) so a new non dimensional temperature is used instead, as depicted in Figure \ref{fig:ethtemp}.\\
+\par The results shown in this Figure are in agreement with those reported in Figure \ref{fig:ethdiameter} in the sense that they confirm the larger spreading diameter and the delay in the spreading of the ethanol droplet. The lamella rim, previously identified for water liquids, is also less visible in the ethanol spreading. This is mainly due to the lower thickness of the lamella of the ethanol droplet. The fact that water reaches lower temperatures is mostly related to the worse thermal properties of the ethanol.\\
+
+\begin{figure}[h]
+\centering
+\subfigure[2 ms]{\input{Figures/5.Chapter/ethtemp}}
+\subfigure[6 ms]{\input{Figures/5.Chapter/ethtemp2}}
+\subfigure[12 ms]{\input{Figures/5.Chapter/ethtemp3}}
+\subfigure[24 ms]{\input{Figures/5.Chapter/ethtemp4}}
+\caption{Average temperature along the radius for Ethanol and Water for a droplet impacting at 0.8m/s on a foil initially with $\Delta T=20ºC$ under saturation}
+\label{fig:ethtemp}
+\end{figure}
+
+\par The heat flux can also be compared between both liquids. Looking at the plots in Figure \ref{fig:ethflux}, an elevated heat flux difference is visible between water and ethanol. The water droplet extracts more heat from the foil than the ethanol droplet.This trend is however affected by the slightly smaller initial diameter of the ethanol droplet (d0=2mm for ethanol and 3mm for water) and due to the aforementioned different temperature difference between the initial foil temperature and the saturation temperature which is actually much different (in percentage).\\
+
+\begin{figure}[h]
+\centering
+\subfigure[2 ms]{\input{Figures/5.Chapter/ethflux}}
+\subfigure[4 ms]{\input{Figures/5.Chapter/ethflux2}}
+\caption{Heat Flux along the radius for Ethanol and Water for a droplet impacting at 0.8m/s on a foil initially with $\Delta T=20ºC$ under saturation}
+\label{fig:ethflux}
+\end{figure}
+
+\par Hence heat flux isn't directly comparable between experiments, but one may compare the the cooling effectiveness of both liquids as this parameter takes into account both the droplet's initial diameter and thermal properties. The obtained results are depicted in Figure \ref{fig:ethcool}. The results for the ethanol experiment show a better cooling effectiveness. This may seem odd looking at the flux values, which are is much lower for ethanol. However, considering the definition of the cooling effectiveness, the total heat removed is divided by the maximum possible heat removed. Since ethanol has worse thermal properties, the maximum possible heat removed is also lower that of water, so at the end the cooling effectiveness considering the improved wetted area is actually higher for ethanol. One can't conclude that ethanol is a better alternative to water when considering droplet cooling applications. The opposite is true and deductible from observing the heat flux and temperature variation plots. Instead what can be said regarding cooling effectiveness is that low surface tensions are related with higher effectiveness. This can be related to larger spreading and wetted area for the same impact velocity, as aforementioned.
+
+\begin{figure}[h]
+\centering
+\input{Figures/5.Chapter/ethcool}
+\caption{Cooling Effectiveness comparison between water and ethanol for a droplet impacting at 0.8m/s on a foil initially with $\Delta T=20ºC$ under saturation}
+\label{fig:ethcool}
+\end{figure}
+
+\subsection{Effect of extreme wetting scenarios: Hydrophilic and Super-Hydrophobic surfaces}
+
+\par Wettability plays a big part in interface phenomena, and its effects on heat transfer can also be studied by IR thermography. With this in mind, several stainless steel foils were cleaned and coated to become super-hydrophobic in order to apply the developed techniques to different wettability surfaces. A comparison between the physical phenomena in the different droplet impact phases is shown in Figure \ref{fig:hsshf}. The main difference between this comparison and the latter two is that instead of having an equilibrium phase, the droplet rebounds off the surface. Initially, the evolution looks similar, but in the timestep of 6ms, while the droplet is already receding in the super-hydrophobic, in the hydrophilic surface, it's reaching its maximum diameter. In terms of droplet impact related phenomena, we can see that the lamella also forms a rim near the contact edge, but quickly disappears.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\linewidth]{Figures/5.Chapter/hsshf.png}
+\caption{HS Images for Hydrophilic and Super-Hydrophobic surfaces droplet impact at 0.8 m/s impact speed}
+\label{fig:hsshf}
+\end{figure}
+
+\par Figure \ref{fig:shfdiameter} compares the spreading factor of a water droplet impacting on a hydrophilic and super-hydrophobic surface. The spreading factor is similar for both surfaces until reaching the maximum diameter (5 ms after impact).\\ 
+\par However while in the hydrophilic surface the droplet recoils remaining in surface, in the super-hydrophobic foil the droplet fully rebounds from the surface (20 ms after impact). The wetted area is always larger in the droplet spreading on the hydrophilic surface, as described in Chapter 2.\\
+
+\begin{figure}[h!]
+\centering
+\input{Figures/5.Chapter/shfdiameter}
+\caption{Spreading Factor along the radius for an Hydrophilic and Super-Hydrophobic}
+\label{fig:shfdiameter}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\subfigure[2 ms]{\input{Figures/5.Chapter/shftemp}}
+\subfigure[6 ms]{\input{Figures/5.Chapter/shftemp2}}
+\subfigure[12 ms]{\input{Figures/5.Chapter/shftemp3}}
+\subfigure[24 ms]{\input{Figures/5.Chapter/shftemp4}}
+\caption{Temperature along the radius for Ethanol and Water}
+\label{fig:shftemp}
+\end{figure}
+
+\par Looking now at the temperature field for the initial temperature of 100ºC, depicted in Figure \ref{fig:shftemp}, one can better draw conclusions about heat transfer phenomena. It is clear from the figure, that the droplet impacting on the super-hydrophobic surface removes less heat, as both the temperature drop and spreading diameter are smaller in the super-hydrophobic surface case. In the center of the droplet, a large slope is nonetheless observable in the center in the super-hydrophobic surface. This is caused by the way the droplet leaves the surface, as all liquid is concentrated in a small radius. Note that the wetted area radius is also smaller. There is no apparent temperature effect of the formed lamella rim, and some unusual curves appear near the droplet center. These phenomena can only be analyzed with the help of the images that one can obtain from the developed code. These images are shown in Figure \ref{fig:shftemp}. In the 6ms panel one can barely see the rim, but it's still visible. The colormap for these images was shortened in order to improve the contrast, or else the lamella's rim wouldn't be visible at all. There are also some unusual spots in the image. The cause of this is the fact that, after some tests the foil's coating gets uneven and the droplet shape is affected. In the first tests this didn't happen, and the shape was more uniform. The IR Images for the first experiment can be seen in Figure \ref{fig:shfim2}. This means that the foil requires a new coating after some tests. The results for the initial temperature of 100ºC are not invalidated but have should have a slightly higher heat flux than normal. The heat flux is slightly higher than expected which may be due to the aging of the surface coating \\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[height=0.45\textheight]{Figures/5.Chapter/shfim.png}
+\caption{IR Images for a Super-Hydrophobic surface droplet impact at 0.8 m/s impact speed (foil initial temperature at 100ºC)}
+\label{fig:shfim}
+\includegraphics[height=0.45\textheight]{Figures/5.Chapter/shfim2.png}
+\caption{IR Images for a Super-Hydrophobic surface droplet impact at 0.8 m/s impact speed (foil initial temperature at 100ºC)}
+\label{fig:shfim2}
+\end{figure}
+
+\par Moving on to the heat flux plots, depicted in Figure \ref{fig:shfflux}. The heat flux is considerably smaller for the super-hydrophobic surface. The heat flux peaks at the contact edge are also smaller. This is representative of a high contact angle as the liquid in the edge is above the surface but not touching it. There is a small peak in the 4 ms plot that's caused by the fact that the droplet is reaching maximum diameter as stated before. This peak is still relatively smaller to the center heat flux in the super-hydrophobic surface test. The flux at the center is very similar between both cases in this same timestep. The cause of this is related to the thickness of the droplet. The thickness is higher in the studied case, so it's expected to remove more heat. This heat flux, as stated before is also expected to be a bit higher than expected. What can also be seen is the apparently smaller diameter. This is explained by the high contact angle, as stated before.\\
+
+\begin{figure}[h]
+\centering
+\subfigure[2 ms]{\input{Figures/5.Chapter/shfflux}}
+\subfigure[4 ms]{\input{Figures/5.Chapter/shfflux2}}
+\caption{Heat Flux comparison along the radius for a droplet impact in surfaces with different wettability}
+\label{fig:shfflux}
+\end{figure}
+
+\par The cooling effectiveness will describe what kind of surface is easier to cool with droplets. The comparison between both surfaces is shown in Figure \ref{fig:shfcool}. This parameter shows considerably lower values for the super-hydrophobic surface. After some timesteps, the cooling effectiveness stabilizes. This occurs because the droplet leaves the surface. From that point on there is no more heat removal, while in the hydrophilic surface, the droplet continues to remove heat. Hence the bad cooling performance obtained when using a super hydrophobic surface is not just caused by the reduced wetting area, but also due to the smaller time interval in which the droplet contacts the surface.
+
+\begin{figure}[h]
+\centering
+\input{Figures/5.Chapter/shfcool}
+\caption{Cooling Effectiveness comparison along the radius for a droplet impact in surfaces with different wettability}
+\label{fig:shfcool}
+\end{figure}

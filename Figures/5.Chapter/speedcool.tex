@@ -1,0 +1,60 @@
+\begin{tikzpicture}
+\begin{axis}[
+	title = {120 ºC || $T_{amb}=24$},
+    tick label style={font=\scriptsize},
+    legend style={font=\scriptsize,/tikz/column 2/.style={column sep=5pt},},
+    %legend columns=2,
+    legend cell align=left,
+	legend pos =north west,
+    grid=major, % Display a grid
+    grid style={dashed,gray!30}, % Set the style
+    xlabel={$t^*=t$\Large{$\frac{u_i}{D_0}$}},
+    ylabel={$\varepsilon$}, 
+    ymin = 0, ymax = 0.15,
+    ytick={0,0.03,0.06,0.09,0.12,0.15},
+    yticklabels={0,0.03,0.06,0.09,0.12,0.15},
+    xmin = 0, xmax = 5,
+    %ytick={0,1600,...,11200},
+    %yticklabel style={
+    %    /pgf/number format/fixed,
+    %    /pgf/number format/precision=5},
+	%scaled y ticks=false,
+    width=0.5\textwidth, 
+    height=7cm,
+    cycle list name= color
+    ]
+\addplot+[dashed]
+coordinates {(	0	,	0	)
+(	0.740740741	,	0.006204439	)
+(	1.481481481	,	0.027167401	)
+(	2.222222222	,	0.055996228	)
+(	2.962962963	,	0.081552623	)
+(	3.703703704	,	0.10136598	)
+(	4.444444444	,	0.11532131	)
+(	5.185185185	,	0.124927101	)
+(	5.925925926	,	0.131361385	)
+};
+\addlegendentry{2 m/s}
+\addplot+[dashed]
+coordinates {(	0	,	0	)
+(	0.296296296	,	0.003018616	)
+(	0.592592593	,	0.010388567	)
+(	0.888888889	,	0.020058751	)
+(	1.185185185	,	0.029057225	)
+(	1.481481481	,	0.036086665	)
+(	1.777777778	,	0.041101457	)
+(	2.074074074	,	0.044656137	)
+(	2.37037037	,	0.047221941	)
+(	2.666666667	,	0.04900349	)
+(	2.962962963	,	0.050282037	)
+(	3.259259259	,	0.051294611	)
+(	3.555555556	,	0.052024343	)
+(	3.851851852	,	0.052657377	)
+(	4.148148148	,	0.053180309	)
+(	4.444444444	,	0.053460793	)
+(	4.740740741	,	0.053762748	)
+(	5.037037037	,	0.05417938	)
+};
+\addlegendentry{0.8 m/s}
+\end{axis}
+\end{tikzpicture}
